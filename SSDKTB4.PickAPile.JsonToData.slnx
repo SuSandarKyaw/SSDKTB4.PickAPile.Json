@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="SSDKTB4.PickAPile.JsonToData/SSDKTB4.PickAPile.JsonToData.csproj" />
+  <Project Path="SSDKTB4.PickAPile.WebApi/SSDKTB4.PickAPile.WebApi.csproj" />
+</Solution>

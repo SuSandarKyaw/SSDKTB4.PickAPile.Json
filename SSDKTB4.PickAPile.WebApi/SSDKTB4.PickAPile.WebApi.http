@@ -1,0 +1,6 @@
+@SSDKTB4.PickAPile.WebApi_HostAddress = http://localhost:5086
+
+GET {{SSDKTB4.PickAPile.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
