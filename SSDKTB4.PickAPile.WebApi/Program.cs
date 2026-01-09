@@ -1,3 +1,5 @@
+using System.Data;
+using Microsoft.Data.SqlClient;
 using Microsoft.IdentityModel.Tokens;
 using SSDKTB4.PickAPile.WebApi.Services;
 
@@ -10,6 +12,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IPickAPileService, PickAPileService>();
+builder.Services.AddScoped<IDbConnection>(sp =>
+	new SqlConnection(builder.Configuration.GetConnectionString("DbConnection")));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

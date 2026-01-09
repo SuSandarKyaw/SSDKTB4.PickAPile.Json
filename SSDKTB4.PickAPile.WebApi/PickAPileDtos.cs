@@ -21,10 +21,4 @@ namespace SSDKTB4.PickAPile.WebApi
 	}
 
 
-	
-	
-	public class PickAPileResponseDto
-	{
-		public List<QuestionDto> Questions { get; set; }
-	}
 }
